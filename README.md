@@ -16,4 +16,4 @@
 文件夹下，如需修改，请将mipmap删掉，输入drawable，切记修改完要保存。
 2.允许多选。比如同时选择 测试图片1@2x 测试图片1@3x 测试图片2@2x 测试图片2@3x,下一步可以在对话框中为测试图片1和测试图片2设置图标名称
 
-src/drawable_auto.jar 可直接通过本地插件安装的方式直接在android studio中安装。重启后Edit菜单下会出现DrawableAuto
+drawable_auto.jar文件是插件文件 可直接通过本地插件安装的方式直接在android studio中安装。重启后Edit菜单下会出现DrawableAuto
