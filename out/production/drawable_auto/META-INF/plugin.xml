@@ -1,0 +1,40 @@
+<idea-plugin version="2">
+    <id>com.fish.plugin.drawable.auto</id>
+    <name>DrawableAuto</name>
+    <version>1.0</version>
+    <!--<vendor email="768191417@qq.com" url="https://github.com/nameZhouyu/">nameZhouyu</vendor>-->
+
+    <description><![CDATA[
+      更快速地为android app 添加两张不同分辨率的图片资源<br>
+      <em>支持设置添加到mipmap／drawable文件夹</em>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      初次发布<br>
+      <em>初次发布</em>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="141.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="Fish.DrawableAutoAction" class="com.fish.DrawableAutoAction" text="DrawableAuto"
+                description="auto move right size drawable to target dir">
+            <add-to-group group-id="EditMenu" anchor="first"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="meta M"/>
+        </action>
+    </actions>
+
+</idea-plugin>
