@@ -154,13 +154,13 @@ public class DrawableAutoAction extends AnAction implements SetFileNameDialog.On
                             OutputStream outStream = new FileOutputStream(targetFile);
                             outStream.write(buffer);
 
-                            msg += sourceName.getOriginName() + "成功导入到" + fileHeader + "-xhdpi/文件夹，名字为" + sourceName.getNewName() + "\n";
+                            msg += file.getName() + "成功导入到" + fileHeader + "-xhdpi/文件夹，名字为" + sourceName.getNewName() + ".png\n";
                         } else if (file.getName().contains(splitChar2)) {
                             File targetFile = new File(resRootPath + fileHeader + "-xxhdpi/" + sourceName.getNewName() + ".png");
                             OutputStream outStream = new FileOutputStream(targetFile);
                             outStream.write(buffer);
 
-                            msg += sourceName.getOriginName() + "成功导入到" + fileHeader + "-xxhdpi/文件夹，名字为" + sourceName.getNewName() + "\n";
+                            msg += file.getName() + "成功导入到" + fileHeader + "-xxhdpi/文件夹，名字为" + sourceName.getNewName() + ".png\n";
                         }
                     }
                 }
